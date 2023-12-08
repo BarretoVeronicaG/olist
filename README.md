@@ -226,13 +226,13 @@ Luego se procedieron a efectuar los siguientes pasos:
                  ```
      - Finalmente graficamos algunaos de los resultados, para poder comprender con que tipo de información contamos:
          
-         GEOLOCALIZACIÓN: olist_geolocation_dataset.
+        **GEOLOCALIZACIÓN: olist_geolocation_dataset.**
        
          Se observa en un histograma la distribución de los datos de ubicación, tomando como como independiente (eje x), el dato de código postal, y como variable           dependiente (eje y), la frecuencia de cada codigo postal-
          
          ![4](https://github.com/BarretoVeronicaG/olist/assets/138631372/e0ef444c-0cfd-415f-a632-06a7ce7be0fd)
   
-         COMPRAS EFECTUADAS: olist_closed_deals_dataset.
+        **COMPRAS EFECTUADAS: olist_closed_deals_dataset.**
        
          Utilizamos una grafico de barras para graficar, las distintas estrategias de marketing usadas para la ventta como eje independiente (eje x) y la 
         frecuencia de uso de cada una en el eje y como variable dependiente. Online medium, es la más predominante.
@@ -240,42 +240,42 @@ Luego se procedieron a efectuar los siguientes pasos:
                   
          ![5](https://github.com/BarretoVeronicaG/olist/assets/138631372/9d81f034-8478-4390-856e-fa9a4f1106d4)
          
-         COMPRAS EFECTUADAS: olist_closed_deals_dataset.
+       **COMPRAS EFECTUADAS: olist_closed_deals_dataset.**
        
        Observamos nuevamente, por medio de un gráfico de barras, los tipos de negocios por los que se efectuan ls ventas, en el eje x, con respecto a la 
        frecuencia de cada una en el eje y. La más recurrente es la reventa.
        
          ![6](https://github.com/BarretoVeronicaG/olist/assets/138631372/ca29a01d-723c-455b-b3b3-5e9fd215df8e)
          
-         ORDENES:olist_orders_dataset.
+       **ORDENES:olist_orders_dataset.**
        
        Por medio de un gráfico de barras, incidamos los estatus de las órdenes (eje x) con respecto al recuento, cantidad de órdenes (eje Y). Se concluyo que la 
        mayor cantidad de órdenes fueron entregadas.
        
          ![7](https://github.com/BarretoVeronicaG/olist/assets/138631372/1a339ccb-9dd9-46e7-ad8c-2168a7deed37)
          
-         PAGOS:olist_order_payments_dataset.
+       **PAGOS:olist_order_payments_dataset.**
        
        En este gráfico podemos observar en el eje independiente (eje x), los tipos de pagos efectuados en las compras, con respecto a la cantidad de compras 
        efectuadas con cada tipo de pago. La mayor cantidad de compras fueron efectuadas con tarjeta de crédito.
        
          ![8](https://github.com/BarretoVeronicaG/olist/assets/138631372/08f5de76-1426-400f-aa11-8901889f91fc)
          
-         PAGOS:olist_order_payments_dataset.
+       **PAGOS:olist_order_payments_dataset.**
        
        Observamos en este gráfico de tipo boxplot, que muestra a simple vista la mediana y los cuartiles de los datos, ​ y también pueden representarse sus valores 
         atípicos, los valores detro de los tipos de pago. Se identifican algunos valores atípicos alredor de los 14000 reales.
        
          ![9](https://github.com/BarretoVeronicaG/olist/assets/138631372/59ee77d4-94d5-497f-ac2e-eb1dbdb53e17)
          
-         MARKETING: olist_marketing_qualified_leads_dataset
+       **MARKETING: olist_marketing_qualified_leads_dataset**
        
        Por medio de un diagrama de barras, se grafica en el eje X, los origines de las estrategias de marketing utilizadas para la venta, con la cantidad 
        efectuada de cada una. Se observa que la estrategia más utilizada es la búsqueda orgánica.
        
          ![10](https://github.com/BarretoVeronicaG/olist/assets/138631372/1fa05d45-0070-4aa7-9dc8-f5e876729cc5)
          
-         REVIEWS:olist_order_reviews_dataset.
+       **REVIEWS:olist_order_reviews_dataset.**
        
        Efectuamos por medio de un gráfico de torta, una análisis de la cantidad de reviews posititvas, con un rating de más de 4, en comparación con las peores           reviews con rating de menos de 3. Se puede observar una mayor cantidad de reviews positivas, con un 77% frente a un 22% de reviews negativas.
        
