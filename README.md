@@ -282,6 +282,7 @@ Los indicadores finales sobre los que decimos trabajar son:
 Finalmente decidimos continuar trabajando dentro del entorno de google, 
 por lo que elegimos conectar con GCP (GOOGLE CLOUD PLATFORM) par el resto del proceso de almacenamiento de datos y la gestión de la visualización de los mismos
 
+   -INSERTAR VIDEO-
 
 ## **[DASHBOARD](https://lookerstudio.google.com/u/0/reporting/eea84435-a3c0-4342-ab6a-12cdb1e34f0f/page/p_39swbcsccd/edit)**
 Finalmente con con el analisis previo efectuado, realizamos una visualización de datos utilizando la herramienta *Looker Studio*, ya que pertenece al entorno donde estamos desarrollando nuestro Proyecto, facilitando la conexión, y además tiene una interfaz intuitiva con un buen diseño
