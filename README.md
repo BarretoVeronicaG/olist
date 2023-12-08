@@ -249,7 +249,8 @@ xxxx
 xxxx
 ![11](https://github.com/BarretoVeronicaG/olist/assets/138631372/30839993-4b45-4c6a-b28a-e16296b0b281)
 
-4) CONCLUSION
+4) Conclusión
+   
 Con esta información finalmente decimos con cuales tablas ibamos a continuar para el proceso de ETL y posterior procesamiento para la visualización, las mismas corresponden a:
 
 **olist_closed_deals_dataset** y **olist_marketing_qualified_leads**, ya que al enfocarse en el área de marketing y no se ajusta a los KPI's en los que elegimos enfocarnos
