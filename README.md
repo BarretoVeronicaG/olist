@@ -48,33 +48,34 @@ Luego se procedieron a efectuar los siguientes pasos:
 
 1)  Primero que se precisa efectuar es la importación de las librerias de Python
 
-```
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from matplotlib import rcParams
-import seaborn as sns
-```
+            ```
+            import numpy as np
+            import pandas as pd
+            import matplotlib.pyplot as plt
+            from matplotlib import rcParams
+            import seaborn as sns
+            ```
 
 2) Importamos los CSV con los datasets, que previamente habiamos decidido guardar en el Drive de Google
-```
-from google.colab import drive
-drive.mount('/content/drive')
+   
+            ```
+            from google.colab import drive
+            drive.mount('/content/drive')
+            
+            customers = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_customers_dataset.csv')
+            geolocation = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_geolocation_dataset.csv')
+            sellers = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_sellers_dataset.csv')
+            order_items = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_order_items_dataset.csv')
+            payments = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_order_payments_dataset.csv')
+            reviews = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_order_reviews_dataset.csv')
+            orders = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_orders_dataset.csv')
+            products = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_products_dataset.csv')
+            deals = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_closed_deals_dataset.csv')
+            product_category = pd.read_csv('/content/drive/MyDrive/Olist Dataset/product_category_name_translation.csv')
+            mkt = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_marketing_qualified_leads_dataset.csv')
+            ```
 
-customers = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_customers_dataset.csv')
-geolocation = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_geolocation_dataset.csv')
-sellers = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_sellers_dataset.csv')
-order_items = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_order_items_dataset.csv')
-payments = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_order_payments_dataset.csv')
-reviews = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_order_reviews_dataset.csv')
-orders = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_orders_dataset.csv')
-products = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_products_dataset.csv')
-deals = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_closed_deals_dataset.csv')
-product_category = pd.read_csv('/content/drive/MyDrive/Olist Dataset/product_category_name_translation.csv')
-mkt = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_marketing_qualified_leads_dataset.csv')
-```
-
-3) Proceder con el  Análisis Exploratorio de Datos
+4) Proceder con el  Análisis Exploratorio de Datos
 
       - En primer lugar hicimos una identificación de las columnas y las filas
            ```
@@ -256,7 +257,7 @@ mkt = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_marketing_qualifie
        
          ![11](https://github.com/BarretoVeronicaG/olist/assets/138631372/30839993-4b45-4c6a-b28a-e16296b0b281)
 
-4) Conclusión
+5) Conclusión
    
 Con esta información finalmente decimos con cuales tablas ibamos a continuar para el proceso de ETL y posterior procesamiento para la visualización, las mismas corresponden a:
 
