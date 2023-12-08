@@ -76,178 +76,185 @@ mkt = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_marketing_qualifie
 
 3) Proceder con el  Análisis Exploratorio de Datos
 
-   - En primer lugar hicimos una identificación de las columnas y las filas
-  ```
-  datasets = [customers, geolocation, sellers, order_items, payments, reviews, orders, products, deals,
-  product_category, mkt]
-  titles = ["customers","geolocations","items", "payments", "orders", "products","reviews","sellers","category_translation", "lead_type", "origin" ]
-  
-  info_df = pd.DataFrame({},)
-  info_df['dataset']= titles
-  
-  info_df['no_of_columns']= [len(df.columns) for df in datasets ]
-  info_df['columns_name']= [', '.join(list(df.columns)) for df in datasets]
-  info_df['no_of_rows'] = [len(df) for df in datasets]
-  
-  info_df.style.background_gradient(cmap='Greys')
+      - En primer lugar hicimos una identificación de las columnas y las filas
+           ```
+           datasets = [customers, geolocation, sellers, order_items, payments, reviews, orders, products, deals,
+           product_category, mkt]
+           titles = ["customers","geolocations","items", "payments", "orders", "products","reviews","sellers","category_translation", "lead_type", "origin" ]
+           
+           info_df = pd.DataFrame({},)
+           info_df['dataset']= titles
+           
+           info_df['no_of_columns']= [len(df.columns) for df in datasets ]
+           info_df['columns_name']= [', '.join(list(df.columns)) for df in datasets]
+           info_df['no_of_rows'] = [len(df) for df in datasets]
+           
+           info_df.style.background_gradient(cmap='Greys')
+         
+           ```
+         ![1 ncolumnas](https://github.com/BarretoVeronicaG/olist/assets/138631372/d8711367-c31f-4796-809d-45080b7e30a6)
 
-  ```
-![1 ncolumnas](https://github.com/BarretoVeronicaG/olist/assets/138631372/d8711367-c31f-4796-809d-45080b7e30a6)
+      - Luego hicimos una visualización de las 5 primeras filas de cada una de las tablas, mediante el código:
 
-   - Luego hicimos una visualización de las 5 primeras filas de cada una de las tablas, mediante el código:
+                 ```
+                 sellers.head()
+                 customers.head()
+                 products.head()
+                 product_category.head()
+                 geolocation.head()
+                 orders.head()
+                 order_items.head()
+                 deals.head()
+                 payments.head()
+                 mkt.head()
+                 reviews.head()
+                 ```
+               
+                 Un ejemplo:
+                 
+                 ![2 vistapreviatabla](https://github.com/BarretoVeronicaG/olist/assets/138631372/c13acb8d-895d-46af-b19a-43eac5fad494)
 
-  ```
-  sellers.head()
-  customers.head()
-  products.head()
-  product_category.head()
-  geolocation.head()
-  orders.head()
-  order_items.head()
-  deals.head()
-  payments.head()
-  mkt.head()
-  reviews.head()
-  ```
-
-  Un ejemplo:
-  
-  ![2 vistapreviatabla](https://github.com/BarretoVeronicaG/olist/assets/138631372/c13acb8d-895d-46af-b19a-43eac5fad494)
-
-   - Se procedió a efecutar una identificación de los tipos de datos de cada una de las tablas:
+      - Se procedió a efecutar una identificación de los tipos de datos de cada una de las tablas:
     
-   ```
-    sellers.dtypes
-    customers.dtypes
-    products.dtypes
-    product_category.dtypes
-    geolocation.dtypes
-    deals.dtypes
-    orders.dtypes
-    order_items.dtypes
-    payments.dtypes
-    mkt.dtypes
-    reviews.dtypes
-   ```
-
-  Los resultados se resumen en la siguiente Tabla:
- 
-
-   | TABLAS                                   | DATOS-STRING        | DATOS-NUMERO ENTERO (int) | DATOS-NUMERO DECIMALES (float) |
-   |    :---:                                 |     :---:           |           :---:           |                :---:           | 
-   | olist_customers_dataset                  | X                   |                           |                   X            | 
-   | olist_geolocation_dataset                |                     | X                         |                                | 
-   | olist_sellers_dataset                    | X                   | X                         |                                | 
-   | olist_order_items_dataset                | X                   | X                         |                  X             | 
-   | olist_order_payments_dataset             | X                   | X                         |                  X             | 
-   | olist_order_reviews_dataset              | X                   | X                         |                                | 
-   | olist_orders_dataset                     | X                   |                           |                                | 
-   | olist_products_dataset                   | X                   |                           |         X                      | 
-   | olist_closed_deals_dataset               | X                   |                           |             X                   | 
-   | product_category_name_translation        | X                   |                           |                                | 
-   | olist_marketing_qualified_leads_dataset  | X                   |                           |                                | 
-    
-   - El próximo paso fue la búsqueda de nulos:
-   
-    ```
-    sellers.isnull().sum()
-    customers.isnull().sum()
-    products.isnull().sum()
-    product_category.isnull().sum()
-    geolocation.isnull().sum()
-    deals.isnull().sum()
-    orders.isnull().sum()
-    order_items.isnull().sum()
-    payments.isnull().sum()
-    mkt.isnull().sum()
-    reviews.isnull().sum() 
-     ```
-  Los resultados se resumen en la siguiente Tabla:
- 
-  | TABLAS                            | COLUMNA                         | N° DE VALORES|
-  |    :---:                          |     :---:                       |         :---:|  
-  |olist_products_datase              |  product_category_name          |    610       |
-  |                                   | product_name_lenght             |       610    |
-  |                                   |  product_description_lenght     |     610      |
-  |                                   | product_photos_qty              |        610   |
-  |                                   | product_weight_g                |          2   |
-  |                                   | product_length_cm               |           2  |
-  |                                   | product_height_cm               |            2 |
-  |                                   | product_width_cm                |             2|
-  | olist_sellers_dataset             |   business_segment              | 1            |
-  |                                   |   lead_type                     | 6            |
-  |                                   |   lead_behaviour_profile        | 177          |
-  |                                   |   has_company                   | 779          |
-  |                                   |   has_gtin                      | 778          |
-  |                                   |   average_stock                 | 776          |
-  |                                   |   business_type                 | 10           |
-  |                                   | declared_product_catalog_size   |   773        |
-  |olist_orders_dataset               | order_approved_at               |     160      |       
-  |                                   |order_delivered_carrier_date     |   1783       |
-  |                                   |   order_delivered_customer_dat  |   2965       |
-  |marketing_qualified_leads_dataset  | origin                          |60            |
-  | olist_order_reviews_dataset       | review_comment_title            |   87656      | 
-  |                                   | review_comment_message          |    58247     |
-
-  - A continuación se revisó la presencia de duplicados en las tablas:
-    
-     ```
-      sellers.duplicated().sum()
-      customers.duplicated().sum()
-      products.duplicated().sum()
-      product_category.duplicated().sum()
-      geolocation.duplicated().sum()
-      deals.duplicated().sum()
-      orders.duplicated().sum()
-      order_items.duplicated().sum()
-      payments.duplicated().sum()
-      mkt.duplicated().sum()
-      reviews.duplicated().sum()
-     ```
-    
-  *Olist_geolocation_dataset*, tiene 261831 valores duplicados. 
-  Esto se debe a que se identifican varios códigos postales diferentes, asociados a la misma ciudad y geolo
-
-  -  Luego se realizó la búsqueda de la información estadística de cada dataset:
-       
-     ```
-      sellers.describe()
-      customers.describe()
-      products.describe()
-      geolocation.describe()
-      deals.describe()
-      orders.describe()
-      payments.describe()
-      order_items.describe()
-      mkt.describe()
-      reviews.describe()
+               ```
+                sellers.dtypes
+                customers.dtypes
+                products.dtypes
+                product_category.dtypes
+                geolocation.dtypes
+                deals.dtypes
+                orders.dtypes
+                order_items.dtypes
+                payments.dtypes
+                mkt.dtypes
+                reviews.dtypes
+               ```
+            
+           Los resultados se resumen en la siguiente Tabla:
+          
         
-     ```
-  - Finalmente graficamos algunaos de los resultados, para poder comprender con que tipo de información contamos:
+           | TABLAS                                   | DATOS-STRING        | DATOS-NUMERO ENTERO (int) | DATOS-NUMERO DECIMALES (float) |
+           |    :---:                                 |     :---:           |           :---:           |                :---:           | 
+           | olist_customers_dataset                  | X                   |                           |                   X            | 
+           | olist_geolocation_dataset                |                     | X                         |                                | 
+           | olist_sellers_dataset                    | X                   | X                         |                                | 
+           | olist_order_items_dataset                | X                   | X                         |                  X             | 
+           | olist_order_payments_dataset             | X                   | X                         |                  X             | 
+           | olist_order_reviews_dataset              | X                   | X                         |                                | 
+           | olist_orders_dataset                     | X                   |                           |                                | 
+           | olist_products_dataset                   | X                   |                           |         X                      | 
+           | olist_closed_deals_dataset               | X                   |                           |             X                   | 
+           | product_category_name_translation        | X                   |                           |                                | 
+           | olist_marketing_qualified_leads_dataset  | X                   |                           |                                | 
+             
+      - El próximo paso fue la búsqueda de nulos:
+      
+                ```
+                sellers.isnull().sum()
+                customers.isnull().sum()
+                products.isnull().sum()
+                product_category.isnull().sum()
+                geolocation.isnull().sum()
+                deals.isnull().sum()
+                orders.isnull().sum()
+                order_items.isnull().sum()
+                payments.isnull().sum()
+                mkt.isnull().sum()
+                reviews.isnull().sum() 
+                 ```
+        Los resultados se resumen en la siguiente Tabla:
+ 
+        | TABLAS                            | COLUMNA                         | N° DE VALORES|
+        |    :---:                          |     :---:                       |         :---:|  
+        |olist_products_datase              |  product_category_name          |    610       |
+        |                                   | product_name_lenght             |       610    |
+        |                                   |  product_description_lenght     |     610      |
+        |                                   | product_photos_qty              |        610   |
+        |                                   | product_weight_g                |          2   |
+        |                                   | product_length_cm               |           2  |
+        |                                   | product_height_cm               |            2 |
+        |                                   | product_width_cm                |             2|
+        | olist_sellers_dataset             |   business_segment              | 1            |
+        |                                   |   lead_type                     | 6            |
+        |                                   |   lead_behaviour_profile        | 177          |
+        |                                   |   has_company                   | 779          |
+        |                                   |   has_gtin                      | 778          |
+        |                                   |   average_stock                 | 776          |
+        |                                   |   business_type                 | 10           |
+        |                                   | declared_product_catalog_size   |   773        |
+        |olist_orders_dataset               | order_approved_at               |     160      |       
+        |                                   |order_delivered_carrier_date     |   1783       |
+        |                                   |   order_delivered_customer_dat  |   2965       |
+        |marketing_qualified_leads_dataset  | origin                          |60            |
+        | olist_order_reviews_dataset       | review_comment_title            |   87656      | 
+        |                                   | review_comment_message          |    58247     |
 
-GEOLOCA
-![4](https://github.com/BarretoVeronicaG/olist/assets/138631372/e0ef444c-0cfd-415f-a632-06a7ce7be0fd)
-xxxxx
+      - A continuación se revisó la presencia de duplicados en las tablas:
+       
+                 ```
+                  sellers.duplicated().sum()
+                  customers.duplicated().sum()
+                  products.duplicated().sum()
+                  product_category.duplicated().sum()
+                  geolocation.duplicated().sum()
+                  deals.duplicated().sum()
+                  orders.duplicated().sum()
+                  order_items.duplicated().sum()
+                  payments.duplicated().sum()
+                  mkt.duplicated().sum()
+                  reviews.duplicated().sum()
+                 ```
+    
+        *Olist_geolocation_dataset*, tiene 261831 valores duplicados. 
+        Esto se debe a que se identifican varios códigos postales diferentes, asociados a la misma ciudad y geolo
 
-![5](https://github.com/BarretoVeronicaG/olist/assets/138631372/9d81f034-8478-4390-856e-fa9a4f1106d4)
-
-xxxxx
-![6](https://github.com/BarretoVeronicaG/olist/assets/138631372/ca29a01d-723c-455b-b3b3-5e9fd215df8e)
-
-xxxx
-![7](https://github.com/BarretoVeronicaG/olist/assets/138631372/1a339ccb-9dd9-46e7-ad8c-2168a7deed37)
-
-xxxx
-![8](https://github.com/BarretoVeronicaG/olist/assets/138631372/08f5de76-1426-400f-aa11-8901889f91fc)
-
-xxxx
-![9](https://github.com/BarretoVeronicaG/olist/assets/138631372/59ee77d4-94d5-497f-ac2e-eb1dbdb53e17)
-
-xxxx
-![10](https://github.com/BarretoVeronicaG/olist/assets/138631372/1fa05d45-0070-4aa7-9dc8-f5e876729cc5)
-
-xxxx
-![11](https://github.com/BarretoVeronicaG/olist/assets/138631372/30839993-4b45-4c6a-b28a-e16296b0b281)
+      -  Luego se realizó la búsqueda de la información estadística de cada dataset:
+          
+                 ```
+                  sellers.describe()
+                  customers.describe()
+                  products.describe()
+                  geolocation.describe()
+                  deals.describe()
+                  orders.describe()
+                  payments.describe()
+                  order_items.describe()
+                  mkt.describe()
+                  reviews.describe()
+                    
+                 ```
+     - Finalmente graficamos algunaos de los resultados, para poder comprender con que tipo de información contamos:
+         
+         GEOLOCA
+         
+         ![4](https://github.com/BarretoVeronicaG/olist/assets/138631372/e0ef444c-0cfd-415f-a632-06a7ce7be0fd)
+         
+         xxxxx
+         
+         ![5](https://github.com/BarretoVeronicaG/olist/assets/138631372/9d81f034-8478-4390-856e-fa9a4f1106d4)
+         
+         xxxxx
+       
+         ![6](https://github.com/BarretoVeronicaG/olist/assets/138631372/ca29a01d-723c-455b-b3b3-5e9fd215df8e)
+         
+         xxxx
+       
+         ![7](https://github.com/BarretoVeronicaG/olist/assets/138631372/1a339ccb-9dd9-46e7-ad8c-2168a7deed37)
+         
+         xxxx
+         ![8](https://github.com/BarretoVeronicaG/olist/assets/138631372/08f5de76-1426-400f-aa11-8901889f91fc)
+         
+         xxxx
+       
+         ![9](https://github.com/BarretoVeronicaG/olist/assets/138631372/59ee77d4-94d5-497f-ac2e-eb1dbdb53e17)
+         
+         xxxx
+       
+         ![10](https://github.com/BarretoVeronicaG/olist/assets/138631372/1fa05d45-0070-4aa7-9dc8-f5e876729cc5)
+         
+         xxxx
+       
+         ![11](https://github.com/BarretoVeronicaG/olist/assets/138631372/30839993-4b45-4c6a-b28a-e16296b0b281)
 
 4) Conclusión
    
@@ -256,7 +263,7 @@ Con esta información finalmente decimos con cuales tablas ibamos a continuar pa
 **olist_closed_deals_dataset** y **olist_marketing_qualified_leads**, ya que al enfocarse en el área de marketing y no se ajusta a los KPI's en los que elegimos enfocarnos
 De la misma forma, elegimos no utilizar la información de la tabla olist_sellers_dataset, ya que nos interesa la información de los clientes y específicamente los datos específicos de los vendedores.
 
-# **INDICADORES (KPI's)**
+## **INDICADORES (KPI's)**
 Los indicadores finales sobre los que decimos trabajar son:
 
 - Total Ventas/Categoria - TOP 10
@@ -265,12 +272,12 @@ Los indicadores finales sobre los que decimos trabajar son:
 - Promedio Dias De Entrega
 - Mejores/Peores  Productos Según Los Consumidores”
 
-# **LIMPIEZA DE DATOS (ETL)**
+## **LIMPIEZA DE DATOS (ETL)**
 Finalmente decidimos continuar trabajando dentro del entorno de google, 
 por lo que elegimos conectar con GCP (GOOGLE CLOUD PLATFORM) par el resto del proceso de almacenamiento de datos y la gestión de la visualización de los mismos
 
 
-# **[DASHBOARD](https://lookerstudio.google.com/u/0/reporting/eea84435-a3c0-4342-ab6a-12cdb1e34f0f/page/p_39swbcsccd/edit)**
+## **[DASHBOARD](https://lookerstudio.google.com/u/0/reporting/eea84435-a3c0-4342-ab6a-12cdb1e34f0f/page/p_39swbcsccd/edit)**
 Finalmente con con el analisis previo efectuado, realizamos una visualización de datos utilizando la herramienta *Looker Studio*, ya que pertenece al entorno donde estamos desarrollando nuestro Proyecto, facilitando la conexión, y además tiene una interfaz intuitiva con un buen diseño
 La misma se efectuó por medio de Big Query.
 
