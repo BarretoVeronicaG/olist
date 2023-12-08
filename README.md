@@ -225,17 +225,54 @@ mkt = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_marketing_qualifie
      ```
   - Finalmente graficamos algunaos de los resultados, para poder comprender con que tipo de información contamos:
 
-    
-     
+GEOLOCA
+![4](https://github.com/BarretoVeronicaG/olist/assets/138631372/e0ef444c-0cfd-415f-a632-06a7ce7be0fd)
+xxxxx
+
+![5](https://github.com/BarretoVeronicaG/olist/assets/138631372/9d81f034-8478-4390-856e-fa9a4f1106d4)
+
+xxxxx
+![6](https://github.com/BarretoVeronicaG/olist/assets/138631372/ca29a01d-723c-455b-b3b3-5e9fd215df8e)
+
+xxxx
+![7](https://github.com/BarretoVeronicaG/olist/assets/138631372/1a339ccb-9dd9-46e7-ad8c-2168a7deed37)
+
+xxxx
+![8](https://github.com/BarretoVeronicaG/olist/assets/138631372/08f5de76-1426-400f-aa11-8901889f91fc)
+
+xxxx
+![9](https://github.com/BarretoVeronicaG/olist/assets/138631372/59ee77d4-94d5-497f-ac2e-eb1dbdb53e17)
+
+xxxx
+![10](https://github.com/BarretoVeronicaG/olist/assets/138631372/1fa05d45-0070-4aa7-9dc8-f5e876729cc5)
+
+xxxx
+![11](https://github.com/BarretoVeronicaG/olist/assets/138631372/30839993-4b45-4c6a-b28a-e16296b0b281)
+
+4) CONCLUSION
+Con esta información finalmente decimos con cuales tablas ibamos a continuar para el proceso de ETL y posterior procesamiento para la visualización, las mismas corresponden a:
+
+**olist_closed_deals_dataset** y **olist_marketing_qualified_leads**, ya que al enfocarse en el área de marketing y no se ajusta a los KPI's en los que elegimos enfocarnos
+De la misma forma, elegimos no utilizar la información de la tabla olist_sellers_dataset, ya que nos interesa la información de los clientes y específicamente los datos específicos de los vendedores.
+
+# **INDICADORES (KPI's)**
+Los indicadores finales sobre los que decimos trabajar son:
+
+- Total Ventas/Categoria - TOP 10
+- Número de productos vendidos por mes y año
+- Número de órdenes Entregadas a  tiempo
+- Promedio Dias De Entrega
+- Mejores/Peores  Productos Según Los Consumidores”
+
+# **LIMPIEZA DE DATOS (ETL)**
+Finalmente decidimos continuar trabajando dentro del entorno de google, 
+por lo que elegimos conectar con GCP (GOOGLE CLOUD PLATFORM) par el resto del proceso de almacenamiento de datos y la gestión de la visualización de los mismos
 
 
+# **[DASHBOARD](https://lookerstudio.google.com/u/0/reporting/eea84435-a3c0-4342-ab6a-12cdb1e34f0f/page/p_39swbcsccd/edit)**
+Finalmente con con el analisis previo efectuado, realizamos una visualización de datos utilizando la herramienta *Looker Studio*, ya que pertenece al entorno donde estamos desarrollando nuestro Proyecto, facilitando la conexión, y además tiene una interfaz intuitiva con un buen diseño
+La misma se efectuó por medio de Big Query.
 
-
-
-
-
-
-
-
+//IMAGENES DE DASHBOORAD//
 
 
