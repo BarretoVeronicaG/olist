@@ -75,7 +75,7 @@ Luego se procedieron a efectuar los siguientes pasos:
             mkt = pd.read_csv('/content/drive/MyDrive/Olist Dataset/olist_marketing_qualified_leads_dataset.csv')
             ```
 
-4) Proceder con el  Análisis Exploratorio de Datos
+3) Proceder con el  Análisis Exploratorio de Datos
 
       - En primer lugar hicimos una identificación de las columnas y las filas
            ```
@@ -243,6 +243,7 @@ Luego se procedieron a efectuar los siguientes pasos:
          ![7](https://github.com/BarretoVeronicaG/olist/assets/138631372/1a339ccb-9dd9-46e7-ad8c-2168a7deed37)
          
          xxxx
+       
          ![8](https://github.com/BarretoVeronicaG/olist/assets/138631372/08f5de76-1426-400f-aa11-8901889f91fc)
          
          xxxx
@@ -257,14 +258,18 @@ Luego se procedieron a efectuar los siguientes pasos:
        
          ![11](https://github.com/BarretoVeronicaG/olist/assets/138631372/30839993-4b45-4c6a-b28a-e16296b0b281)
 
-5) Conclusión
+4) Conclusión de la exploración de los datos
    
-Con esta información finalmente decimos con cuales tablas ibamos a continuar para el proceso de ETL y posterior procesamiento para la visualización, las mismas corresponden a:
+   Con esta información finalmente decimos con cuales tablas ibamos a continuar para el proceso de ETL y posterior procesamiento para la visualización, las mismas 
+   corresponden a:
 
-**olist_closed_deals_dataset** y **olist_marketing_qualified_leads**, ya que al enfocarse en el área de marketing y no se ajusta a los KPI's en los que elegimos enfocarnos
-De la misma forma, elegimos no utilizar la información de la tabla olist_sellers_dataset, ya que nos interesa la información de los clientes y específicamente los datos específicos de los vendedores.
+   **olist_closed_deals_dataset** y **olist_marketing_qualified_leads**, ya que al enfocarse en el área de marketing y no se ajusta a los KPI's en los que 
+   elegimos enfocarnos
+   De la misma forma, elegimos no utilizar la información de la tabla olist_sellers_dataset, ya que nos interesa la información de los clientes y específicamente 
+   los datos específicos de los vendedores.
 
 ## **INDICADORES (KPI's)**
+
 Los indicadores finales sobre los que decimos trabajar son:
 
 - Total Ventas/Categoria - TOP 10
