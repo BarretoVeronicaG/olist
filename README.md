@@ -304,6 +304,9 @@ Los indicadores finales sobre los que decimos trabajar son:
 ## **[LIMPIEZA DE DATOS (ETL)](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sethereal-brace-360713!2sDATASET!3sFINAL3&project=dolar-mep)**
 Decidimos continuar trabajando dentro del entorno de google, por lo que elegimos conectar con GCP (GOOGLE CLOUD PLATFORM) par el resto del proceso de almacenamiento de datos y la gestión de la visualización de los mismos
 
+   ![Watch the video](https://www.canva.com/design/DAF2gCEPchE/SlxyUyPIaKEH_Ia3crjIlQ/edit?utm_content=DAF2gCEPchE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+   
    -INSERTAR VIDEO-
 
 ## **[DASHBOARD](https://lookerstudio.google.com/u/0/reporting/eea84435-a3c0-4342-ab6a-12cdb1e34f0f/page/p_39swbcsccd/edit)**
