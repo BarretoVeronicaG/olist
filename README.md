@@ -5,7 +5,7 @@
 Nuestro cliente es una empresa de E-Commerce de Argentina, que nos contrató para que realicemos un análisis del mercado Brasilero, utilizando la información provista de la empresa OLIST
 Buscamos elaborar un tablero que permita describir el conjunto de datos entregados explorando el mercado brasileño entre los años 2016 y 2018
 
-##**OBJETIVOS Y ALCANCES**
+## **OBJETIVOS Y ALCANCES**
 Nuestro alcance está orientado a Logística, tiempos de entrega, Productos y ventas y buscamos:
 
 - Encontrar los productos más vendidos, los mejor calificados, así como medir sus ventas en periodos de tiempo 
