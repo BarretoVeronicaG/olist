@@ -305,7 +305,10 @@ Los indicadores finales sobre los que decimos trabajar son:
 Decidimos continuar trabajando dentro del entorno de google, por lo que elegimos conectar con GCP (GOOGLE CLOUD PLATFORM) par el resto del proceso de almacenamiento de datos y la gestión de la visualización de los mismos
 
 
-https://github.com/BarretoVeronicaG/olist/assets/138631372/0a58c28c-8bc5-4b3e-b734-a219f4e35ed9
+
+
+https://github.com/BarretoVeronicaG/olist/assets/138631372/50701b2a-1630-42ef-91f4-b36490b9bf30
+
 
 
 
