@@ -5,7 +5,7 @@
 Nuestro cliente es una empresa de E-Commerce de Argentina, que nos contrató para que realicemos un análisis del mercado Brasilero, utilizando la información provista de la empresa OLIST
 Buscamos elaborar un tablero que permita describir el conjunto de datos entregados explorando el mercado brasileño entre los años 2016 y 2018
 
-[**BASE DE DATOS**] ((https://drive.google.com/drive/folders/1ZGym_RAYdFoqzB9NGG_axmpXlc31fQ2e?usp=drive_link),(https://drive.google.com/drive/folders/1mU_Pdqzqkp5MSDL2OjQBuMtwgHS-r-hj?usp=drive_link))
+[**BASE DE DATOS**]((https://drive.google.com/drive/folders/1ZGym_RAYdFoqzB9NGG_axmpXlc31fQ2e?usp=drive_link),(https://drive.google.com/drive/folders/1mU_Pdqzqkp5MSDL2OjQBuMtwgHS-r-hj?usp=drive_link))
 
 ## **OBJETIVOS Y ALCANCES**
 Nuestro alcance está orientado a Logística, tiempos de entrega, Productos y ventas y buscamos:
