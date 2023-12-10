@@ -312,7 +312,7 @@ https://github.com/BarretoVeronicaG/olist/assets/138631372/50701b2a-1630-42ef-91
 
 
 
-## **[DASHBOARD](https://lookerstudio.google.com/u/0/reporting/eea84435-a3c0-4342-ab6a-12cdb1e34f0f/page/p_39swbcsccd/edit)**
+## **[DASHBOARD](https://lookerstudio.google.com/s/uEhB_SuI3pk)**
 Finalmente con con el analisis previo efectuado, realizamos una visualización de datos utilizando la herramienta *Looker Studio*, ya que pertenece al entorno donde estamos desarrollando nuestro Proyecto, facilitando la conexión, y además tiene una interfaz intuitiva con un buen diseño
 La misma se efectuó por medio de Big Query.
 
