@@ -280,7 +280,7 @@ Luego se procedieron a efectuar los siguientes pasos:
 
 5) Conclusión de la exploración de los datos
    
-   Con esta información finalmente decimos con cuales tablas ibamos a continuar para el proceso de ETL y posterior procesamiento para la visualización, las mismas 
+   Con esta información finalmente decimos con cuales tablas no ibamos a continuar para el proceso de ETL y posterior procesamiento para la visualización, las mismas 
    corresponden a:
 
    **olist_closed_deals_dataset** y **olist_marketing_qualified_leads**, ya que al enfocarse en el área de marketing y no se ajusta a los KPI's en los que 
