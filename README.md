@@ -300,7 +300,7 @@ Los indicadores finales sobre los que decimos trabajar son:
 
 - Total Ventas/Categoria - TOP 10
 - Número de productos vendidos por mes y año
-- Número de órdenes Entregadas a  tiempo
+- Proceso de entrega de las órdenes
 - Promedio Dias De Entrega
 - Mejores/Peores  Categorías Según Los Consumidores”
 
@@ -319,8 +319,24 @@ https://github.com/BarretoVeronicaG/olist/assets/138631372/50701b2a-1630-42ef-91
 Finalmente con con el analisis previo efectuado, realizamos una visualización de datos utilizando la herramienta *Looker Studio*, ya que pertenece al entorno donde estamos desarrollando nuestro Proyecto, facilitando la conexión, y además tiene una interfaz intuitiva con un buen diseño
 La misma se efectuó por medio de Big Query.
 
-//IMAGENES DE DASHBOORAD//
+
+![Análisis_Olist_E-Commerce-001](https://github.com/BarretoVeronicaG/olist/assets/138631372/fbb5ea74-ea52-4900-8eda-297c2b105856)
+
+![Análisis_Olist_E-Commerce-002](https://github.com/BarretoVeronicaG/olist/assets/138631372/122cda41-7cce-4328-b616-98bc2b8a3caf)
+
+![Análisis_Olist_E-Commerce-003](https://github.com/BarretoVeronicaG/olist/assets/138631372/f709261a-85a0-4f35-89f3-532dbebc2ece)
 
 ## **CONCLUSIONES**
 
+Según los datos, Olist E-commerce tiene alrededor de 99.441 pedidos durante 2016-2018.
+ 
+La empresa tiene una tasa de éxito del 82.4%. 
+
+Su valoración media de los productos es de 4,02 estrellas, con categorías de productos que van tan alto como 4,64 estrellas (de un máximo de 5) y tan bajo como 2,5 estrellas. Las opiniones desfavorables probablemente indican que podría haber problemas con la calidad de los productos en algunas categorías de productos. 
+
+El rendimiento de la entrega también podría influir en las puntuaciones de las reseñas y, sin duda, el porcentaje de éxito podría mejorarse.
+
+Con la supervisión y análisis periódico de las opiniones de los clientes, se podrá obtener constantemente, nueva información sobre la calidad de los productos e identificar áreas de mejora. 
+
+Los retrasos en las entregas (17,6% demoradas), pueden deberse a determinados retos demográficos, accesibilidad y posible optimización de rutas.
 
