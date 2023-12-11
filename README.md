@@ -264,12 +264,6 @@ Luego se procedieron a efectuar los siguientes pasos:
        
          ![8](https://github.com/BarretoVeronicaG/olist/assets/138631372/08f5de76-1426-400f-aa11-8901889f91fc)
          
-       **PAGOS:olist_order_payments_dataset.**
-       
-       Observamos en este gráfico de tipo boxplot, que muestra a simple vista la mediana y los cuartiles de los datos, ​ y también pueden representarse sus valores 
-        atípicos, los valores detro de los tipos de pago. Se identifican algunos valores atípicos alredor de los 14000 reales.
-       
-         ![9](https://github.com/BarretoVeronicaG/olist/assets/138631372/59ee77d4-94d5-497f-ac2e-eb1dbdb53e17)
          
        **MARKETING: olist_marketing_qualified_leads_dataset**
        
