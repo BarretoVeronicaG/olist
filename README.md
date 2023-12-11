@@ -293,7 +293,7 @@ Los indicadores finales sobre los que decimos trabajar son:
 
 - Total Ventas/Categoria - TOP 10
 - Número de productos vendidos por mes y año
-- Proceso de entrega de las órdenes
+- D[ias de proceso de entrega de las órdenes
 - Promedio dias de entrega
 - Mejores/Peores productos según los consumidores”
 
