@@ -301,8 +301,8 @@ Los indicadores finales sobre los que decimos trabajar son:
 - Total Ventas/Categoria - TOP 10
 - Número de productos vendidos por mes y año
 - Proceso de entrega de las órdenes
-- Promedio Dias De Entrega
-- Mejores/Peores  Categorías Según Los Consumidores”
+- Promedio dias de entrega
+- Mejores/Peores productos según los consumidores”
 
 ## **[LIMPIEZA DE DATOS (ETL)](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sethereal-brace-360713!2sDATASET!3sFINAL3&project=dolar-mep)**
 Decidimos continuar trabajando dentro del entorno de google, por lo que elegimos conectar con GCP (GOOGLE CLOUD PLATFORM) par el resto del proceso de almacenamiento de datos y la gestión de la visualización de los mismos
