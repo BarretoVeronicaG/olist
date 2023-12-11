@@ -284,9 +284,8 @@ Luego se procedieron a efectuar los siguientes pasos:
    corresponden a:
 
    **olist_closed_deals_dataset** y **olist_marketing_qualified_leads**, ya que al enfocarse en el área de marketing y no se ajusta a los KPI's en los que 
-   elegimos enfocarnos
-   De la misma forma, elegimos no utilizar la información de la tabla olist_sellers_dataset, ya que nos interesa la información de los clientes y específicamente 
-   los datos específicos de los vendedores.
+   elegimos trabajar
+
 
 ## **INDICADORES (KPI's)**
 
