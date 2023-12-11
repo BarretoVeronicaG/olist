@@ -227,7 +227,7 @@ Luego se procedieron a efectuar los siguientes pasos:
                   reviews.describe()
                     
                  ```
-     - Finalmente graficamos algunaos de los resultados, para poder comprender con que tipo de información contamos:
+     - Finalmente graficamos algunos de los resultados, para poder comprender con que tipo de información contamos:
          
         **GEOLOCALIZACIÓN: olist_geolocation_dataset.**
        
